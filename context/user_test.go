@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/afiifnajmi/authkit/jwt"
+	"github.com/afiifmaul/authkit/jwt"
 )
 
 func TestSetUser(t *testing.T) {

@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	authctx "github.com/afiifnajmi/authkit/context"
-	"github.com/afiifnajmi/authkit/jwt"
+	authctx "github.com/afiifmaul/authkit/context"
+	"github.com/afiifmaul/authkit/jwt"
 )
 
 const testSecret = "middleware-test-secret"

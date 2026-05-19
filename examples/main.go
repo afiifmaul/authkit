@@ -25,11 +25,11 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/afiifnajmi/authkit/bcrypt"
-	authctx "github.com/afiifnajmi/authkit/context"
-	authjwt "github.com/afiifnajmi/authkit/jwt"
-	"github.com/afiifnajmi/authkit/middleware"
-	"github.com/afiifnajmi/authkit/otp"
+	"github.com/afiifmaul/authkit/bcrypt"
+	authctx "github.com/afiifmaul/authkit/context"
+	authjwt "github.com/afiifmaul/authkit/jwt"
+	"github.com/afiifmaul/authkit/middleware"
+	"github.com/afiifmaul/authkit/otp"
 )
 
 // In-memory user store for demonstration purposes.

@@ -1,7 +1,7 @@
 # 🔐 AuthKit
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/afiifnajmi/authkit.svg)](https://pkg.go.dev/github.com/afiifnajmi/authkit)
-[![Go Report Card](https://goreportcard.com/badge/github.com/afiifnajmi/authkit)](https://goreportcard.com/report/github.com/afiifnajmi/authkit)
+[![Go Reference](https://pkg.go.dev/badge/github.com/afiifmaul/authkit.svg)](https://pkg.go.dev/github.com/afiifmaul/authkit)
+[![Go Report Card](https://goreportcard.com/badge/github.com/afiifmaul/authkit)](https://goreportcard.com/report/github.com/afiifmaul/authkit)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A modular, production-ready authentication toolkit for Go backend applications.
@@ -18,7 +18,7 @@ A modular, production-ready authentication toolkit for Go backend applications.
 ## Installation
 
 ```bash
-go get github.com/afiifnajmi/authkit
+go get github.com/afiifmaul/authkit
 ```
 
 ## Quick Start
@@ -31,10 +31,10 @@ import (
     "log"
     "net/http"
 
-    "github.com/afiifnajmi/authkit/bcrypt"
-    authctx "github.com/afiifnajmi/authkit/context"
-    "github.com/afiifnajmi/authkit/jwt"
-    "github.com/afiifnajmi/authkit/middleware"
+    "github.com/afiifmaul/authkit/bcrypt"
+    authctx "github.com/afiifmaul/authkit/context"
+    "github.com/afiifmaul/authkit/jwt"
+    "github.com/afiifmaul/authkit/middleware"
 )
 
 func main() {
@@ -75,7 +75,7 @@ func main() {
 ### `bcrypt` — Password Hashing
 
 ```go
-import "github.com/afiifnajmi/authkit/bcrypt"
+import "github.com/afiifmaul/authkit/bcrypt"
 ```
 
 | Function | Description |
@@ -98,7 +98,7 @@ hash, err = bcrypt.HashWithCost("secret123", 14)
 ### `jwt` — Token Management
 
 ```go
-import "github.com/afiifnajmi/authkit/jwt"
+import "github.com/afiifmaul/authkit/jwt"
 ```
 
 | Function/Method | Description |
@@ -129,7 +129,7 @@ fmt.Println(claims.UserID, claims.Role, claims.Type)
 ### `otp` — TOTP/MFA
 
 ```go
-import "github.com/afiifnajmi/authkit/otp"
+import "github.com/afiifmaul/authkit/otp"
 ```
 
 | Function | Description |
@@ -152,7 +152,7 @@ valid := otp.Validate(secret, "123456")
 ### `middleware` — HTTP Authentication
 
 ```go
-import "github.com/afiifnajmi/authkit/middleware"
+import "github.com/afiifmaul/authkit/middleware"
 ```
 
 | Function | Description |
@@ -175,7 +175,7 @@ mux.Handle("/api/admin", middleware.RequireAuth(manager)(
 ### `context` (authctx) — User Context Helpers
 
 ```go
-import authctx "github.com/afiifnajmi/authkit/context"
+import authctx "github.com/afiifmaul/authkit/context"
 ```
 
 | Function | Description |

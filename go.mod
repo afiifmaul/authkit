@@ -1,4 +1,4 @@
-module github.com/afiifnajmi/authkit
+module github.com/afiifmaul/authkit
 
 go 1.25.0
 

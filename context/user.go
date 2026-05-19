@@ -22,7 +22,7 @@ package authctx
 import (
 	"context"
 
-	"github.com/afiifnajmi/authkit/jwt"
+	"github.com/afiifmaul/authkit/jwt"
 )
 
 // contextKey is an unexported type used as a context key to prevent

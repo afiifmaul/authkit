@@ -19,8 +19,8 @@ import (
 	"net/http"
 	"strings"
 
-	authctx "github.com/afiifnajmi/authkit/context"
-	"github.com/afiifnajmi/authkit/jwt"
+	authctx "github.com/afiifmaul/authkit/context"
+	"github.com/afiifmaul/authkit/jwt"
 )
 
 // RequireAuth returns an HTTP middleware that validates JWT tokens.
